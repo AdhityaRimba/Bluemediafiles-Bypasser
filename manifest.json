@@ -1,0 +1,16 @@
+{
+    "name": "Bluemediafiles Bypasser",
+    "description": "IGGGames Bluemediafiles Bypasser",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "icons": {
+      "128": "icon.png"
+    },
+    "permissions": ["activeTab", "contextMenus", "storage"],
+    "content_scripts": [
+        {
+          "matches": ["*://bluemediafiles.com/*"],
+          "js": ["index.js"]
+        }
+      ]
+  }
